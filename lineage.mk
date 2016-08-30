@@ -15,6 +15,8 @@
 
 $(call inherit-product, device/motorola/harpia/full_harpia.mk)
 
+$(call inherit-product, device/motorola/harpia/twrp.mk)
+
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
