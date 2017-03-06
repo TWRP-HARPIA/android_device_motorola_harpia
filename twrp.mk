@@ -36,12 +36,17 @@ TARGET_INCREASES_COLDBOOT_TIMEOUT := true
 
 # TWRP
 TARGET_RECOVERY_FSTAB := device/motorola/harpia/recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_PIXEL_FORMAT := RGB_565
+TW_NEW_ION_HEAP := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_THEME := portrait_hdpi
+
+# Vold
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
 TW_DEVICE_VERSION := harpia
 
