@@ -39,7 +39,6 @@ TARGET_RECOVERY_FSTAB := device/motorola/harpia/recovery/root/etc/twrp.fstab
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 RECOVERY_SDCARD_ON_DATA := true
-BOARD_SUPPRESS_SECURE_ERASE := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_THEME := portrait_hdpi
