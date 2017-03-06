@@ -15,16 +15,7 @@
 
 include device/motorola/msm8916-common/BoardConfigCommon.mk
 
--include vendor/motorola/harpia/BoardConfigVendor.mk
-
 DEVICE_PATH := device/motorola/harpia
-
-# Asserts
-TARGET_OTA_ASSERT_DEVICE := harpia,harpia_retail
-
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_harpia
-TARGET_RECOVERY_DEVICE_MODULES := libinit_harpia
 
 # Kernel
 TARGET_KERNEL_CONFIG := harpia-mini_defconfig
@@ -38,9 +29,3 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16879616 # 16484 * 1024 mmcblk0p32
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2684354560 # 2621440 * 1024 mmcblk0p41
 BOARD_PERSISTIMAGE_PARTITION_SIZE := 8388608   # 8192 * 1024 mmcblk0p29
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 11775377408 # 11499392 * 1024 mmcblk0p42
-
-# Power
-TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

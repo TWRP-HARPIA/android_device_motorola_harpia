@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2015 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,12 @@
 # limitations under the License.
 #
 
-# Inherit from harpia device
-$(call inherit-product, device/motorola/harpia/device.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := harpia
 PRODUCT_NAME := full_harpia
-
-$(call inherit-product-if-exists, vendor/motorola/harpia/harpia-vendor.mk)
+PRODUCT_BRAND := Motorola
+PRODUCT_MODEL := Moto G Play
+PRODUCT_MANUFACTURER := Motorola
