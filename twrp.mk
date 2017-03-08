@@ -32,7 +32,7 @@ TARGET_INCREASES_COLDBOOT_TIMEOUT := true
 # TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # TWRP
-TARGET_RECOVERY_FSTAB := device/motorola/harpia/recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/motorola/harpia/twrp.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := RGB_565
 TW_NEW_ION_HEAP := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
