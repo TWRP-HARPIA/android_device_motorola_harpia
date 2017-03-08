@@ -15,9 +15,7 @@
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
-RECOVERY_VARIANT := twrp
-BOARD_GLOBAL_CFLAGS := -DBOARD_RECOVERY_BLDRMSG_OFFSET=2048
-TARGET_RECOVERY_DEVICE_MODULES := chargeled
+TW_DEVICE_VERSION := harpia
 
 # don't take forever to wipe
 BOARD_SUPPRESS_SECURE_ERASE := true
@@ -41,8 +39,7 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_THEME := portrait_hdpi
+RECOVERY_VARIANT := twrp
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
-
-TW_DEVICE_VERSION := harpia
