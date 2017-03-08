@@ -13,9 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# TWRP (Optional)
-ifeq ($(WITH_TWRP),true)
-
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 RECOVERY_VARIANT := twrp
@@ -49,5 +46,3 @@ TW_THEME := portrait_hdpi
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
 TW_DEVICE_VERSION := harpia
-
-endif
